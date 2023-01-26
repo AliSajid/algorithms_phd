@@ -22,6 +22,7 @@ name = "algorithms"
 version = "0.1.0"
 dependencies = [
  "clap",
+ "exercises",
 ]
 
 [[package]]
@@ -29,6 +30,7 @@ name = "algorithms_phd"
 version = "0.1.0"
 dependencies = [
  "clap",
+ "exercises",
  "tempfile",
 ]
 

@@ -14,14 +14,14 @@ categories = ["algorithms", "phd", "rust"]
 
 [workspace]
 members = [
-    "algorithms",
-    "exercises"
+    "./algorithms",
+    "./exercises"
 ]
 
 [dependencies]
 clap = { version = "4.1.4", features = ["derive", "debug", "env", "string", "unicode"] }
 tempfile = "3.3.0"
-
+exercises = { path = "./exercises" }
 
 [dev-dependencies]
 
