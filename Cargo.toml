@@ -19,7 +19,11 @@ members = [
 ]
 
 [dependencies]
+clap = { version = "4.1.4", features = ["derive", "debug", "env", "string", "unicode"] }
+tempfile = "3.3.0"
 
+
+[dev-dependencies]
 
 [[bin]]
 name = "algorithms"
