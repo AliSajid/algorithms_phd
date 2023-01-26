@@ -1,7 +1,7 @@
 use std::fmt::{self, Display, Formatter};
 
 #[derive(Debug, PartialEq)]
-struct AminoAcid {
+pub struct AminoAcid {
     name: String,
     short_name: String,
     abbreviation: String,
@@ -11,7 +11,7 @@ struct AminoAcid {
 }
 
 impl AminoAcid {
-    fn new(name: &str) -> AminoAcid {
+    pub fn new(name: &str) -> AminoAcid {
         match name {
             "Alanine" => AminoAcid {
                 name: "Alanine".to_string(),

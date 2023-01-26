@@ -1,14 +1,14 @@
 use std::fmt::{self, Display, Formatter};
 
 #[derive(Debug, PartialEq, Eq)]
-struct Nucleotide {
+pub struct Nucleotide {
     name: String,
     symbol: String,
     complement: String,
 }
 
 impl Nucleotide {
-    fn new(name: &str) -> Nucleotide {
+    pub fn new(name: &str) -> Nucleotide {
         match name {
             "A" => Nucleotide {
                 name: "Adenine".to_string(),

@@ -1,7 +1,7 @@
 use std::fmt::{self, Display, Formatter};
 
 #[derive(Debug, PartialEq, Eq)]
-struct Codon {
+pub struct Codon {
     codon: String,
     codon_dna: String,
     special: bool,
