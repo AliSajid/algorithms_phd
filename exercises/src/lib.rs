@@ -1,14 +1,12 @@
-pub fn add(left: usize, right: usize) -> usize {
-    left + right
-}
+use std::collections::HashMap;
 
-#[cfg(test)]
-mod tests {
-    use super::*;
+pub mod aminoacid;
+pub mod chap01;
+pub mod codon;
+pub mod nucleotide;
 
-    #[test]
-    fn it_works() {
-        let result = add(2, 2);
-        assert_eq!(result, 4);
-    }
+pub fn solutions() -> HashMap<String, fn()> {
+    let mut solutions: HashMap<String, fn()> = HashMap::new();
+    solutions.insert("1_1_6".to_string(), chap01::e1_1_6::solve);
+    solutions
 }
