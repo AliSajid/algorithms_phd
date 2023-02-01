@@ -7,6 +7,7 @@ pub struct Nucleotide {
     complement: String,
 }
 
+#[allow(dead_code)]
 impl Nucleotide {
     pub fn new(name: &str) -> Nucleotide {
         match name {
