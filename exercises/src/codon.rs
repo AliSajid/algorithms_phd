@@ -420,7 +420,7 @@ mod tests {
         let codon = Codon::new("AAA");
         assert_eq!(codon.codon, "AAA");
         assert_eq!(codon.codon_dna, "AAA");
-        assert_eq!(codon.special, false);
+        assert!(!codon.special);
         assert_eq!(codon.amino_acid, Some("Lysine".to_string()));
     }
 
@@ -429,7 +429,7 @@ mod tests {
         let codon = Codon::new("???");
         assert_eq!(codon.codon, "???");
         assert_eq!(codon.codon_dna, "???");
-        assert_eq!(codon.special, false);
+        assert!(!codon.special);
         assert_eq!(codon.amino_acid, None);
     }
 
@@ -450,7 +450,7 @@ mod tests {
         let codon = Codon::new("UAA");
         assert_eq!(codon.codon, "UAA");
         assert_eq!(codon.codon_dna, "TAA");
-        assert_eq!(codon.special, true);
+        assert!(codon.special);
         assert_eq!(codon.amino_acid, None);
     }
 }
